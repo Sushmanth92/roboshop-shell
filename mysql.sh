@@ -9,4 +9,4 @@ systemctl start mysqld
 echo "ALTER USER 'root'@'localhost IDENTIFIED BY 'Roboshop@1';" > /tmp/root-pass-mysql
 DEFAULT_PASSWORD=$(grep ' A temporary password' /var/log/mysql.log | awk '{print $NF}')
 
-cat /tmp/root-pass-sql | mysql --connect-expired-password -uroot -p"${DEFAULT_PASSWORD}"
+cat /tmp/root-pass-sql | mysql --connect-expired-password -uroot -p"sEGYgp>=k5W0"
